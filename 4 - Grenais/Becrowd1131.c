@@ -20,7 +20,7 @@ int main(){
         }
          if(Op==2){
              break;
-         }   
+        }   
         
         }
         printf("%d grenais\n", NumJogos);

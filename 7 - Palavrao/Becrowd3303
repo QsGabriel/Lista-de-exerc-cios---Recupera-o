@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+#define TAM_MAXIMO 21
+
+unsigned int getTam(char *palavra) {
+    unsigned int tam = 0;
+    while (palavra[tam] != '\0') {
+        tam++;
+    }
+    return tam;
+}
+
+void printPalavraTipo(char *palavra) {
+    if (getTam(palavra) < 10) {
+        printf("palavrinha\n");
+    } else {
+        printf("palavrao\n");
+    }
+}
+
+int main() {
+    char palavra[TAM_MAXIMO];
+    scanf("%s", palavra);
+
+    printPalavraTipo(palavra);
+
+    return 0;
+}
